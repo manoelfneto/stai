@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 
-import { Box, Container, Flex, Text, Image } from '@chakra-ui/react'
+import { Box, Container, Text, Image } from '@chakra-ui/react'
 import Logo from '../../common/assets/logo-stai.png'
 
 export const FullPageLayout = ({ children }: { children: ReactNode }) => {
   return (
     <Box
       backgroundColor='#F5F5F8'
-      h='100%'
+      h='100vh !important'
       w='100%'
       display='flex'
       flexDir='column'
@@ -24,10 +24,10 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
         as='header'
         pb={[3, 7]}
       >
-        <Image src={Logo} alt='Strateegia' width={48} maxW='full' />
+        <Image src={Logo} alt='stai' width={48} maxW='full' />
       </Box>
-
       <Container
+        p={8}
         w={['none', 'lg']}
         bg={['none', 'white']}
         borderRadius={['none', 10]}
@@ -35,18 +35,11 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
         maxW='container.md'
       >
         {children}
-        <Flex
-          pb={6}
-          as='footer'
-          justify='space-between'
-          align='center'
-          px={[6, 7]}
-          maxW={{ base: '100%' }}
-        >
-          <Text fontSize='xs' color='gray.300'>
+        <Box mt={6}>
+          <Text textAlign='end' fontSize='xs' color='gray.300'>
             © 2022 - STAI todos os direitos reservados
           </Text>
-        </Flex>
+        </Box>
       </Container>
     </Box>
   )
