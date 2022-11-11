@@ -5,10 +5,16 @@ export function Login() {
   return (
     <FullPageLayout>
       <Box>
-        <VStack>
-          <Text color='#C20000' fontSize='xl' fontWeight='bold'>
-            entrar
-          </Text>
+        <Text
+          mb={6}
+          textAlign='center'
+          color='#C20000'
+          fontSize='2xl'
+          fontWeight='bold'
+        >
+          entrar
+        </Text>
+        <VStack spacing={4} alignItems='self-start'>
           <Text color='#718096' fontWeight='bold'>
             e-mail
           </Text>
@@ -16,10 +22,16 @@ export function Login() {
           <Text color='#718096' fontWeight='bold'>
             senha
           </Text>
-          <Input placeholder='digite sua senha' />
-          <Button variant='link'>esqueceu sua senha?</Button>
-          <Button colorScheme='pink'>entrar</Button>
+          <Input type='password' placeholder='digite sua senha' />
+          <Button color='blue.300' fontWeight='normal' variant='link'>
+            esqueceu sua senha?
+          </Button>
         </VStack>
+        <Box textAlign='center'>
+          <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink'>
+            entrar
+          </Button>
+        </Box>
       </Box>
     </FullPageLayout>
   )
