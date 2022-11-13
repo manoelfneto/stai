@@ -4,12 +4,13 @@ import reportWebVitals from './reportWebVitals'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Login } from './modules/login'
 import { theme } from './modules/common/styles/theme'
+import { AppRouter } from './routes/routes'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <Login />
+      <AppRouter />
     </ChakraProvider>
   </React.StrictMode>
 )
