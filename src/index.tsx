@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { ChakraProvider } from '@chakra-ui/react'
-import { Login } from './modules/login'
 import { theme } from './modules/common/styles/theme'
 import { AppRouter } from './routes/routes'
 
