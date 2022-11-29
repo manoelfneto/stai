@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 import { Box, Container, Text, Image } from '@chakra-ui/react'
 import Logo from '../../common/assets/logo-stai.png'

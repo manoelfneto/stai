@@ -1,7 +1,13 @@
 import { Box, Button, Input, Text, VStack } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 import FullPageLayout from './components/full-page-layout'
 
 export function Login() {
+  const navigate = useNavigate()
+
+  function handleSubmit() {
+    navigate('/home')
+  }
   return (
     <FullPageLayout>
       <Box>
@@ -28,7 +34,14 @@ export function Login() {
           </Button>
         </VStack>
         <Box textAlign='center'>
-          <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink'>
+          <Button
+            onClick={handleSubmit}
+            borderRadius='xl'
+            px={12}
+            size='md'
+            mt={6}
+            colorScheme='pink'
+          >
             entrar
           </Button>
         </Box>
