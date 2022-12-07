@@ -65,7 +65,9 @@ const Home = () => {
                     <Button onClick={() => navigate('home/dashboard')}>
                       Dashboard
                     </Button>
-                    <Button>Usuários</Button>
+                    <Button onClick={() => navigate('home/users')}>
+                      Usuários
+                    </Button>
                     <Button>Funcionários</Button>
                   </VStack>
                 </SlideFade>
