@@ -23,7 +23,7 @@ export const Dashboard = () => {
             <InputLeftAddon children={<BiSearch />} />
             <Input placeholder='pesquise por gráfico' />
           </InputGroup>
-          <Button px={4} size='sm'>
+          <Button px={6} size='sm'>
             Imprimir Gráficos
           </Button>
         </HStack>
