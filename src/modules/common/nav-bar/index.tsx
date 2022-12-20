@@ -39,7 +39,12 @@ const NavBar = () => {
               Usuários
             </Button>
 
-            <Button colorScheme='red' variant='ghost' w='full'>
+            <Button
+              colorScheme='red'
+              variant='ghost'
+              w='full'
+              onClick={() => navigate('home/people')}
+            >
               Funcionários
             </Button>
           </VStack>
