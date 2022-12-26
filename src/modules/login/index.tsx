@@ -6,7 +6,7 @@ export function Login() {
   const navigate = useNavigate()
 
   function handleSubmit() {
-    navigate('/home')
+    navigate('/navbar')
   }
   return (
     <FullPageLayout>
